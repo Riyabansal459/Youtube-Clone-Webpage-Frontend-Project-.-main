@@ -1,0 +1,115 @@
+.thumbnail {
+  width: 100%;
+}
+
+.video-title {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.video-author,.video-stats{
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+}
+.video-author{
+  margin-bottom: 4px;
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+.profile-picture{
+  width: 36px;
+  border-radius: 25px;
+}
+.thumbnail-row{
+  margin-bottom: 8px;
+  position: relative;
+}
+.video-time{
+  font-family: Roboto,Arial;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+  border-radius: 2px;
+}
+.video-grid{
+  display: grid;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+@media (min-width: 0px) and (max-width: 600px) {
+  .video-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 750px) {
+  .video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.linkss{
+  color: inherit; 
+  text-decoration:none;
+  
+}
+
+.video-profile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.video-profile .tooltip{
+  font-family: Roboto, Arial;
+  position: absolute;
+  background-color: white;
+  color: black;
+  padding: 10px  10px;
+  border-radius: 5px;
+  font-size: 12px;
+  bottom: -10px;
+  right: -120px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+  display: flex;
+  box-shadow: 0 0 5px rgba(0,0,0,0.6);
+  align-items: center;
+}
+.video-profile:hover .tooltip{
+  opacity: 1;
+}
+.video-profile .tooltip .name-nall{
+  margin-left: 10px;
+}
+.video-profile .tooltip .name-nall .chaannel-name{
+  font-weight: bold;
+}
+.video-profile .tooltip .name-nall .subscriber-countt {
+  color: gray;
+}
